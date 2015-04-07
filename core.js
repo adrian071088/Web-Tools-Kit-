@@ -1,6 +1,6 @@
 core = {};
 
 //Modules
-core.server = {};
+core.http = {};
 core.animation = {};
 core.html = {};
