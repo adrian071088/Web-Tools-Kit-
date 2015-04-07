@@ -1,14 +1,11 @@
-core = {};
-
-//Modules
-core.http = {};
-core.animation = {};
-core.html = {};
-
-//Module: http;
-core.http.construct = function(){
+core = function(){
+  this.http = {};
+  this.http.construct = function(){
+    this.xmlhttp = new XmlHttpRequest();
+    this.state = 0;
+  }
   
-  this.xmlhttp = new XmlHttpRequest();
-  this.state = 0;
+  this.html = {};
   
-}
+};
+
